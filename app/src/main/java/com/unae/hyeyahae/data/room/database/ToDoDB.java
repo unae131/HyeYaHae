@@ -19,7 +19,7 @@ public abstract class ToDoDB extends RoomDatabase {
     public static ToDoDB getInstance(final Context context){
         if(instance == null){
             instance = Room.databaseBuilder(context.getApplicationContext(),
-                    ToDoDB.class, "todo.db").allowMainThreadQueries().build();
+                    ToDoDB.class, "todo.db").build();
         }
         return instance;
     }

@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +17,7 @@ import android.widget.EditText;
 import com.unae.hyeyahae.R;
 import com.unae.hyeyahae.ToDoViewModel;
 import com.unae.hyeyahae.data.model.ToDo;
+import com.unae.hyeyahae.data.room.dao.ToDoDao;
 import com.unae.hyeyahae.data.room.database.ToDoDB;
 
 import java.util.ArrayList;
@@ -72,4 +74,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
 }
